@@ -1,2 +1,12 @@
-<h1>Todos#index</h1>
-<p>Find me in app/views/todos/index.html.erb</p>
+<h1>All To Do(s)</h1>
+
+<%= link_to "New To Do", new_book_path %> |
+<%= link_to "Your To Do(s)", todos_path %> |
+<%= link_to "Home", root_path %>
+
+<br>
+
+<%= render @todos %>
+
+
+
