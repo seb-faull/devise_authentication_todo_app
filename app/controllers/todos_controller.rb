@@ -1,12 +1,15 @@
 class TodosController < ApplicationController
-  
+
   def index
+    @todos = current_user.todos
   end
 
   def show
+    @todo = current_user.todos.find(params[:id])
   end
 
   def new
+    @todo = current_user.todos.new
   end
 
   def create
