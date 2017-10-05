@@ -29,23 +29,6 @@ body {
 }
 
 /* Typography */
-h1 {
-	font-family: 'Roboto Slab', serif;
-	font-weight: 300;
-	font-size: 3.2em;
-	color: white;
-	text-shadow: 0 0 10px rgba(0,0,0,0.8);
-	margin: 0 auto;
-	padding-top: 180px;
-	max-width: 300px;
-	text-align: center;
-	position: relative;
-	top: 0px;
-}
-
-h1 {
-	font-weight: 400;
-}
 
 h2 {
     text-transform: uppercase;
@@ -86,6 +69,14 @@ p.small {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
 
+#all-to-dos {
+	margin-top: 70px;
+}
+
+#all-to-dos h1 {
+    color: #009688;
+}
+
 .login-box {
 	background-color: white;
 	max-width: 340px;
@@ -119,7 +110,11 @@ p.small {
 	border: 1px solid #ccc;
 	border-radius: 2px;
 	font-size: .9em;
-    color: #ffffff;
+    color: #484848;
+    background-color: #ade4db;
+}
+
+#login-signup-input-button {
     background-color: #00b595;
 }
 
@@ -128,6 +123,7 @@ p.small {
 	border-color: #665851;
 	transition: 0.5s;
 	color: #665851;
+    background-color: white;
 }
 
 .login-box button {
