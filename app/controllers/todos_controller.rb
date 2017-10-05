@@ -13,15 +13,26 @@ class TodosController < ApplicationController
   end
 
   def create
+    new_todo = current_user.todos.create(todo_params)
+    new_todo.save
+
+    redirect_to new_todo
   end
 
   def edit
+    @todo = current_user.todos.find(params[:id])
   end
 
   def update
+    todo = current_user.todos.find(params[:id])
+    todo.update(todo_params)
+
+    redirect_to todo
   end
 
   def destroy
+    current_user.todos.destroy(params[:id])
+    redirect_to todos_url
   end
 end
 
